@@ -1,3 +1,3 @@
-# src-github.com-Tanvi-19-NewRepo 
+# github.com-gophercises-CLI
 My first repository on GitHub
 my demo session 
