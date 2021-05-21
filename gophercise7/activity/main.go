@@ -5,20 +5,21 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/gophercises/tasks/cmd"
-	"github.com/gophercises/tasks/db"
+	"github.com/gophercises/gophercise7/activity/cmd"
+	"github.com/gophercises/gophercise7/activity/database"
+    
 	"github.com/mitchellh/go-homedir"
 )
 
 func main() {
 	home,_ := homedir.Dir()
 	path := filepath.Join(home,"tasks.db")
-    must(db.Init(path))
+    errMsg(database.Init(path))
 	fmt.Println("DB CONNECT")
-	must(cmd.RootCmd.Execute())
+	errMsg(cmd.Rcmd.Execute())
 }
 
-func must(err error){
+func errMsg(err error){
 	if err != nil {
 		fmt.Println(err.Error())
 		os.Exit(1)
