@@ -18,7 +18,7 @@ var addCmd = &cobra.Command{
 
 		_,err := database.NewTask(task)
 		if err !=nil {
-			fmt.Print(err.Error())
+			fmt.Print(err.Error()) 
 		}
 		fmt.Print("\nYou are trying to add following tasks into the list-\n\n")
 		fmt.Print("**********************************************")

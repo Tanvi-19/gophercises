@@ -2,12 +2,9 @@ package main
 
 import (
 	"fmt"
-	"os"
 	"path/filepath"
-
 	"github.com/gophercises/gophercise7/activity/cmd"
-	"github.com/gophercises/gophercise7/activity/database"
-    
+	"github.com/gophercises/gophercise7/activity/database"    
 	"github.com/mitchellh/go-homedir"
 )
 
@@ -22,6 +19,6 @@ func main() {
 func errMsg(err error){
 	if err != nil {
 		fmt.Println(err.Error())
-		os.Exit(1)
+		return
 	}
 }

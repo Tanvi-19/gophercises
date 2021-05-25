@@ -4,19 +4,13 @@ import (
 	"fmt"
 	"log"
 	"strconv"
-
-	//"log"
 	"path/filepath"
 	"testing"
 
 	"github.com/mitchellh/go-homedir"
 )
 
-// test boti() and itob()
-
 var home, _ = homedir.Dir()
-
-
 var path = filepath.Join(home, "test.db")
 func TestInit(t *testing.T) {
 	
@@ -45,6 +39,7 @@ func TestAddTask(t *testing.T){
 
 func TestViewTasks(t *testing.T) {
 	activities, err := ViewAllTasks()
+	fmt.Print("List of recently added tasks:- \n\n")
 	for num, tasks := range activities{
 		fmt.Printf("%d . %s (%d) \n",num+1, tasks.Task,tasks.Num)
 	} 
@@ -55,46 +50,42 @@ func TestViewTasks(t *testing.T) {
 }
 
 func TestDelTask(t *testing.T) {
-args := []string{"1","2"}
+args := []string{"1","2","3","4","5","hgyd"}
 	activities, _ := ViewAllTasks()
-		var nums []int
-		for _, num := range args{
-			result, err := strconv.Atoi(num)
-			
-			if err != nil{
-				fmt.Println("\nSome error occured while parsing this:-",num)
-				
+	var nums []int
+	for num := range nums{
+		for i := range args{
+			if num != i {
+				fmt.Print("enable to done ")
+			}
+		}
+	}
+	for _, num := range args{
+		result, err := strconv.Atoi(num)
+		if err != nil{
+			fmt.Println("\nSome error occured while parsing this:-",num)
 			}else{
 				nums = append(nums, result)
 			}
 		}
 		fmt.Printf("Successfully completed tasks-\n\n")
 		fmt.Print("**********************************************\n")
-
+		
 		for _, num := range nums{
-			
 			if num <= 0 || num > len(activities){	
 				fmt.Println()
 				fmt.Printf("Wrong task numbers:- %d",num)
-				
-				continue
+			    continue
 			}
-			
 			activity := activities[num-1]
-			
-			err := DelTask(2)
+			err := DelTask(11)
 			
 			if err == nil{
 				
-				fmt.Printf("%d. %s\n",num+1,activity.Task)
-				
-				
-			}else{
-				fmt.Printf("%s enable to done",activity.Task)
+				fmt.Printf("%d. %s %d\n",num,activity.Task,activity.Num)
 			}
 		}
-		fmt.Print("**********************************************\n")
+		fmt.Print("\n**********************************************\n")
 		fmt.Print("\n")
+	}
 
-
-}

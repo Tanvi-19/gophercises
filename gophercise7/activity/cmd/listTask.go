@@ -2,9 +2,11 @@ package cmd
 
 import (
 	"fmt"
+	
 
 	"github.com/gophercises/gophercise7/activity/database"
 	
+
 	"github.com/spf13/cobra"
 )
 var listCmd = &cobra.Command{
@@ -17,13 +19,13 @@ var listCmd = &cobra.Command{
 			fmt.Print("There is no task to complete\n\n")
 		}
 		for num, tasks := range activities{
-			 fmt.Printf("%d. %s (%d) \n",num+1, tasks.Task,tasks.Num)
-			 
-			 
+			fmt.Printf("%d. %s (%d) \n",num+1, tasks.Task,tasks.Num)
 		}
 	},
 }
-
 func init() {
 	Rcmd.AddCommand(listCmd)
 }
+
+
+

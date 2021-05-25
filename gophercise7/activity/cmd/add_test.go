@@ -8,13 +8,9 @@ import (
 )	
 func TestAddTask(t *testing.T) {
 	home,_ := homedir.Dir()
-	path := filepath.Join(home,"test.db")
+	path := filepath.Join(home,"demo.db")
     database.Init(path)
 	t1 := []string{"Perform some set of opepations onto db"}
-	
-
 	addCmd.Run(addCmd,t1)
-	
-
 	database.Db.Close()
 }

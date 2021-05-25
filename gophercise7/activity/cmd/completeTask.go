@@ -14,6 +14,7 @@ var doCmd = &cobra.Command{
 	Run: func(cmd *cobra.Command, args []string) {
 		activities, _ := database.ViewAllTasks()
 		var nums []int
+		fmt.Print("\n**********************************************")
 		for _, num := range args{
 			result, err := strconv.Atoi(num)
 			
@@ -24,6 +25,8 @@ var doCmd = &cobra.Command{
 				nums = append(nums, result)
 			}
 		}
+		fmt.Print("\n**********************************************\n\n")
+		
 		for _, num := range nums{
 			
 			if num <= 0 || num > len(activities){	
@@ -40,12 +43,10 @@ var doCmd = &cobra.Command{
 			if err == nil{
 				fmt.Printf("\nSuccessfully completed task-")
 				fmt.Print("\n\n")
-				fmt.Printf(" %d. %s ",num+1,activity.Task)
+				fmt.Printf(" %d. %s ",num,activity.Task)
 				fmt.Print("\n**********************************************")
 				fmt.Print("\n\n")
 				
-			}else{
-				fmt.Printf("%s enable to done",activity.Task)
 			}
 		}
 		fmt.Print("\n\n")

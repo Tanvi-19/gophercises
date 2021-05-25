@@ -11,11 +11,8 @@ import (
 
 func TestCompleteTask(t * testing.T){
     home, _ := homedir.Dir()
-	path := filepath.Join(home, "test.db")
+	path := filepath.Join(home, "demo.db")
 	database.Init(path)
-	args := []string{"1","2","3","4","5","6"}
-	errarg := []string{"cdh","stfdtw"}
-		doCmd.Run(addCmd, args)
-		doCmd.Run(doCmd,errarg)
-		
+	args := []string{"1","2","3","4","5","6","hdbshcbc","wwyfy"}
+	doCmd.Run(addCmd, args)
 }
