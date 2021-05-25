@@ -25,7 +25,7 @@ func TestInit(t *testing.T) {
 }
 
 func TestAddTask(t *testing.T){
-	
+
 	_, record := NewTask("New Record")
 	
 	if record ==nil{
@@ -53,13 +53,6 @@ func TestDelTask(t *testing.T) {
 args := []string{"1","2","3","4","5","hgyd"}
 	activities, _ := ViewAllTasks()
 	var nums []int
-	for num := range nums{
-		for i := range args{
-			if num != i {
-				fmt.Print("enable to done ")
-			}
-		}
-	}
 	for _, num := range args{
 		result, err := strconv.Atoi(num)
 		if err != nil{
