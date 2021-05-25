@@ -1,3 +1,2 @@
-# gophercises
-My first repository on GitHub
-my demo session 
+# gophercises7 Exercise
+CLI Task Manager
