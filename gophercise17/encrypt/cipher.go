@@ -1,5 +1,4 @@
 package encrypt
-
 import (
 	"crypto/aes"
 	"crypto/cipher"
@@ -11,7 +10,6 @@ import (
 	"hash"
 	"io"
 )
-
 
 var hasher hash.Hash
 var cipherKey []byte
@@ -64,7 +62,7 @@ func EncryptW(key string, w io.Writer) (cipher.StreamWriter, error) {
 	n, err := w.Write(iv)
 	if n != len(iv) || err != nil {
 		fmt.Print("\n")
-		fmt.Print("encrypt error occurred:- unable to write\n")
+		fmt.Print("encrypt error occurred:- unable to write IV\n")
 
 	}
 	return cipher.StreamWriter{S: stream, W: w}, nil
@@ -75,7 +73,7 @@ func DecryptR(key string, r io.Reader) (*cipher.StreamReader, error) {
 	iv := make([]byte, aes.BlockSize)
 	n, err := r.Read(iv)
 	if n < len(iv) || err != nil {
-		return nil, errors.New("\nencrypt error occurred:- unable to read ")
+		return nil, errors.New("\nencrypt error occurred:- unable to read IV")
 	}
 	stream, _ := decryptStream(key, iv)
 	

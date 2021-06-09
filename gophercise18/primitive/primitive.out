@@ -1,0 +1,14 @@
+mode: count
+github.com/gophercises/gophercise18/primitive/primitive.go:28.41,30.25 1 5
+github.com/gophercises/gophercise18/primitive/primitive.go:30.25,32.3 1 4
+github.com/gophercises/gophercise18/primitive/primitive.go:35.56,40.2 4 9
+github.com/gophercises/gophercise18/primitive/primitive.go:43.117,45.33 2 4
+github.com/gophercises/gophercise18/primitive/primitive.go:48.2,59.16 7 4
+github.com/gophercises/gophercise18/primitive/primitive.go:62.2,63.16 2 3
+github.com/gophercises/gophercise18/primitive/primitive.go:66.2,68.16 3 2
+github.com/gophercises/gophercise18/primitive/primitive.go:71.2,71.20 1 2
+github.com/gophercises/gophercise18/primitive/primitive.go:45.33,47.3 1 4
+github.com/gophercises/gophercise18/primitive/primitive.go:59.16,61.3 1 1
+github.com/gophercises/gophercise18/primitive/primitive.go:63.16,65.3 1 1
+github.com/gophercises/gophercise18/primitive/primitive.go:68.16,70.3 1 0
+github.com/gophercises/gophercise18/primitive/primitive.go:74.85,80.2 4 3

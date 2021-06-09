@@ -14,10 +14,6 @@ var RootCmd = &cobra.Command{
 
 var encodingKey string
 
-func init() {
-	RootCmd.PersistentFlags().StringVarP(&encodingKey, "key", "k", "", "the key is used to encrypt and decrypt the data")
-}
-
 func vaultPath() string {
 	home, _ := homedir.Dir()
 	return filepath.Join(home, ".vault")

@@ -1,0 +1,17 @@
+mode: count
+github.com/gophercises/gophercise7/activity/database/connect.go:20.38,22.42 2 1
+github.com/gophercises/gophercise7/activity/database/connect.go:29.2,29.16 1 1
+github.com/gophercises/gophercise7/activity/database/connect.go:22.42,28.3 5 1
+github.com/gophercises/gophercise7/activity/database/connect.go:32.41,34.40 2 2
+github.com/gophercises/gophercise7/activity/database/connect.go:46.2,46.22 1 2
+github.com/gophercises/gophercise7/activity/database/connect.go:34.40,37.74 3 2
+github.com/gophercises/gophercise7/activity/database/connect.go:43.3,43.13 1 2
+github.com/gophercises/gophercise7/activity/database/connect.go:37.74,42.4 1 62
+github.com/gophercises/gophercise7/activity/database/connect.go:49.27,50.42 1 5
+github.com/gophercises/gophercise7/activity/database/connect.go:50.42,53.3 2 5
+github.com/gophercises/gophercise7/activity/database/connect.go:56.27,60.2 3 6
+github.com/gophercises/gophercise7/activity/database/connect.go:62.25,64.2 1 62
+github.com/gophercises/gophercise7/activity/database/connect.go:68.28,71.16 3 1
+github.com/gophercises/gophercise7/activity/database/connect.go:71.16,73.3 1 0
+github.com/gophercises/gophercise7/activity/database/connect.go:73.7,74.43 1 1
+github.com/gophercises/gophercise7/activity/database/connect.go:74.43,77.4 2 1

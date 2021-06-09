@@ -1,0 +1,27 @@
+mode: count
+github.com/gophercises/gophercise17/encrypt/Vault.go:11.48,16.2 1 1
+github.com/gophercises/gophercise17/encrypt/Vault.go:25.36,27.16 2 2
+github.com/gophercises/gophercise17/encrypt/Vault.go:31.2,34.24 3 2
+github.com/gophercises/gophercise17/encrypt/Vault.go:27.16,30.3 2 0
+github.com/gophercises/gophercise17/encrypt/Vault.go:37.47,40.2 2 2
+github.com/gophercises/gophercise17/encrypt/Vault.go:42.30,48.2 4 1
+github.com/gophercises/gophercise17/encrypt/Vault.go:50.48,53.2 2 1
+github.com/gophercises/gophercise17/encrypt/Vault.go:55.49,60.9 5 1
+github.com/gophercises/gophercise17/encrypt/Vault.go:63.2,63.19 1 1
+github.com/gophercises/gophercise17/encrypt/Vault.go:60.9,62.3 1 0
+github.com/gophercises/gophercise17/encrypt/Vault.go:66.46,74.2 6 1
+github.com/gophercises/gophercise17/encrypt/cipher.go:16.52,21.2 4 11
+github.com/gophercises/gophercise17/encrypt/cipher.go:24.56,36.2 7 2
+github.com/gophercises/gophercise17/encrypt/cipher.go:39.56,42.16 3 3
+github.com/gophercises/gophercise17/encrypt/cipher.go:46.2,46.37 1 2
+github.com/gophercises/gophercise17/encrypt/cipher.go:49.2,55.32 5 1
+github.com/gophercises/gophercise17/encrypt/cipher.go:42.16,44.3 1 1
+github.com/gophercises/gophercise17/encrypt/cipher.go:46.37,48.3 1 1
+github.com/gophercises/gophercise17/encrypt/cipher.go:58.69,63.32 5 2
+github.com/gophercises/gophercise17/encrypt/cipher.go:68.2,68.50 1 2
+github.com/gophercises/gophercise17/encrypt/cipher.go:63.32,67.3 2 1
+github.com/gophercises/gophercise17/encrypt/cipher.go:72.70,75.31 3 3
+github.com/gophercises/gophercise17/encrypt/cipher.go:78.2,80.51 2 2
+github.com/gophercises/gophercise17/encrypt/cipher.go:75.31,77.3 1 1
+github.com/gophercises/gophercise17/encrypt/cipher.go:83.66,88.2 2 3
+github.com/gophercises/gophercise17/encrypt/cipher.go:90.66,94.2 2 2
